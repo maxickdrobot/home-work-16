@@ -18,8 +18,53 @@
 
 <body>
 
-  <!-- Код пишем здесь -->
-  <h1>Hello</h1>
+  <!-- Header -->
+  <header class="header">
+
+    <!-- header-content -->
+    <div class="header-content">
+      <div class="header-content__container">
+        <h1 class="header-content__title">WE ARE REAL WEB-DEVELOPERS</h1>
+        <div class="header-content__actions">
+          <a class="btn btn--light" href="">Learn more</a>
+          <a class="btn btn--light" href="">Get started</a>
+        </div>
+      </div>
+    </div><!-- header-content -->
+
+    <!-- header-menu -->
+    <div class="header-menu">
+      <!-- header-menu__container -->
+     <div class="header-menu__container">
+       <!-- header-logo -->
+       <div class="header-logo">
+         <a class="header-logo__link" href="">
+           <span class="header-logo__accent">SITE</span>LOGO
+         </a>
+       </div><!-- header-logo -->
+      
+       <!-- header-navbar -->
+       <nav class="header-navbar">
+          <!-- todo: create trigger button -->
+         <ul class="header-navbar__list">
+           <li class="header-navbar__item">
+             <a class="header-navbar__link" href="">Home</a>
+           </li>
+           <li class="header-navbar__item">
+             <a class="header-navbar__link" href="">About</a>
+           </li>
+           <li class="header-navbar__item">
+             <a class="header-navbar__link" href="">Contacts</a>
+           </li>
+         </ul>
+        </nav><!-- header-navbar -->
+     </div><!-- header-menu__container -->
+    </div><!-- header-menu -->
+
+    <!-- header-overlay -->
+    <div class="header-overlay"></div>
+
+  </header>  <!-- Header -->
 
   <!-- Подключаем библиотеку jquery, необходимую для работы нашего основного скрипта -->
   <script src="libs/jquery/dist/jquery.min.js"></script>

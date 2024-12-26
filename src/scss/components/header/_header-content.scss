@@ -1,2 +1,31 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+.header-content {
+    position: relative;
+    z-index: 1;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__title {
+        @media (min-width: $lg) {
+            margin: 0 0 53px;
+        }
+
+        @media (max-width: ($lg - 0.2px)) and (min-width: $md) {
+            margin: 0 0 43px;
+        }
+
+        @media (max-width: ($md - 0.2px)) {
+            margin: 0 0 33px;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: center;
+        gap: $gap;
+    }
+}
