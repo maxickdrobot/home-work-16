@@ -21,16 +21,16 @@
         @media (max-width: ($md - 0.2px)) {
             margin: 0 0 33px;
         }
+    }
 
-        &__actions {
-            display: flex;
-            justify-content: center;
-            gap: $gap;
+    &__actions {
+        display: flex;
+        justify-content: center;
+        gap: $gap;
 
-            @include sm {
-                flex-direction: column;
-                align-items: center;
-            }
+        @include sm {
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
