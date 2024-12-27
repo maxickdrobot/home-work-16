@@ -283,7 +283,7 @@ a {
   position: relative;
   z-index: 1;
 }
-.header-content__actions {
+.header-content__title__actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -684,7 +684,7 @@ a {
   .btn--primary {
     min-width: 100%;
   }
-  .header-content__actions {
+  .header-content__title__actions {
     -webkit-box-align: center;
     align-items: center;
     -ms-flex-align: center;

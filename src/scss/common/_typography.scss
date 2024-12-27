@@ -24,7 +24,7 @@ h1 {
     line-height: 1.2;
     font-weight: 300;
     letter-spacing: 0.078em;
-    
+
     @include lg-min {
         font-size: 3.75rem;
     }
