@@ -25,15 +25,15 @@ h1 {
     font-weight: 300;
     letter-spacing: 0.078em;
     
-    @media (min-width: $lg) {
+    @include lg-min {
         font-size: 3.75rem;
     }
 
-    @media (max-width: ($lg - 0.2px)) and (min-width: $md){
+    @include lg-md {
         font-size: 2.5rem;
     }
 
-    @media (max-width: ($md - 0.2px)) {
+    @include md {
         font-size: 1.875rem;
     }
 }

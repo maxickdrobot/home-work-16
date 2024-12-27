@@ -5,17 +5,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 250px;
-    min-height: 60px;
     padding: 0.5em 1em;
-    font-size: 18px;
     letter-spacing: 0.1em;
-    background-color: rgba($color-white, 0.10);
-    border: 2px solid $color-white;
+    border-width: 2px;
+    border-style: solid;
     transition: background-color 0.3s;
 
     &:hover,
     &:focus {
         background-color: $color-accent;
     }
+}
+
+.btn--light {
+    background-color: rgba($color-white, 0.10);
+    border-color: $color-white;
+
+    @include lg-min {
+        min-width: 250px;
+        min-height: 60px;
+        font-size: 1.125rem;
+    }
+
+    @include lg-md {
+        width: 200px;
+        height: 50px;
+    }
+
+    @include md {
+        width: 170px;
+        height: 40px;
+    }
+}
+
+.btn--primary {
+    min-height: 60px;
+    background-color: rgba($color-primary, 0.8);
+    border-color: $color-primary;
+
+    @include sm-min {
+        min-width: 350px;
+    }
+
+    @include sm {
+        min-width: 100%;
+    }
+
+}
+
+.visually-hidden {
+    @include visually-hidden;
 }

@@ -11,10 +11,10 @@
 
     &__title {
         @media (min-width: $lg) {
-            margin: 0 0 53px;
-        }
 
-        @media (max-width: ($lg - 0.2px)) and (min-width: $md) {
+        margin: 0 0 53px;
+        }
+        @media (max-width: ($lg - 0.2px)) and (min-width: $md){
             margin: 0 0 43px;
         }
 
@@ -27,5 +27,10 @@
         display: flex;
         justify-content: center;
         gap: $gap;
+
+        @include sm {
+            flex-direction: column;
+            align-items: center;
+        }
     }
-}
+} 
